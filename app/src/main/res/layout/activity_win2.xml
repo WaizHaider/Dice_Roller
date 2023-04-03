@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinActivity2"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="140dp"
+        android:textSize="40sp"
+        android:text="Dice Roller"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="130dp"
+        android:textSize="30sp"
+        android:text="End Game"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Score Details"
+            android:textSize="28sp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="120dp"
+            android:textColor="#3D33A8"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/winName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Player 1 Score"
+            android:textSize="23sp"
+            android:layout_marginTop="95dp"
+            android:layout_marginStart="40dp"
+            android:textColor="#3D33A8"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text="Player 2 Score"
+            android:textSize="23sp"
+            android:layout_marginTop="95dp"
+            android:layout_marginStart="220dp"
+            android:textColor="#3D33A8"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text=""
+            android:textSize="23sp"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="90dp"
+            android:textColor="#3D33A8"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="290dp"
+            android:textColor="#3D33A8"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menuBtn"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/score"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/orange_button">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="7dp"
+            android:text="Main Menu"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:background="@color/grey"
+        android:text=""
+        android:textSize="35sp"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="130dp"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+</RelativeLayout>

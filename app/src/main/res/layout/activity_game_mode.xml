@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMode"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="80dp"
+        android:textSize="50sp"
+        android:text="Dice Roller"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/compBtn"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/orange_button">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="7dp"
+            android:text="VS Computer"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PlayerBtn"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/compBtn"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/orange_button">
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="7dp"
+            android:text="2 Players"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:text="The Rules of The Game"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/PlayerBtn"
+        android:layout_marginStart="30dp"
+        android:textColor="#3D33A8">
+
+    </TextView>
+
+</RelativeLayout>

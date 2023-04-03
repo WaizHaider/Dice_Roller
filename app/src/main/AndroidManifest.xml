@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiceRoller"
+        tools:targetApi="31">
+        <activity
+            android:name=".WinActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Game2"
+            android:exported="false" />
+        <activity
+            android:name=".two_Players"
+            android:exported="false" />
+        <activity
+            android:name=".GameMode"
+            android:exported="false" />
+        <activity
+            android:name=".TargetGoal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WinActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewGame"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true"/>
+
+</manifest>

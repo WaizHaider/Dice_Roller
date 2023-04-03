@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rules"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="80dp"
+        android:textSize="50sp"
+        android:text="Dice Roller"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="150dp"
+        android:textSize="40sp"
+        android:text="Rules"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="50dp"
+        android:textSize="20sp"
+        android:text="In case of Draw both players keep on playing until one reach the target goal"
+        android:textColor="#3D33A8">
+
+    </TextView>
+
+</RelativeLayout>

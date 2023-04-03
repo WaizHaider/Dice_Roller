@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TargetGoal"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:textSize="50sp"
+        android:text="Dice Roller"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/logo">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="110dp"
+        android:textSize="35sp"
+        android:text="Target Goal"
+        android:textColor="#3D33A8"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUserN"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview1"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="62dp">
+
+
+        <EditText
+            android:id="@+id/target"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="Target"
+            android:inputType="number"
+            android:textColor="#3D33A8"
+            android:textColorHint="#3D33A8">
+
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/UserN"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cardUserN"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="62dp">
+
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="User Name"
+            android:inputType="text"
+            android:textColor="#3D33A8"
+            android:textColorHint="#3D33A8">
+
+        </EditText>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/targetBtn"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/orange_button">
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="7dp"
+            android:text="START GAME"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:text="Skip"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/targetBtn"
+        android:layout_alignParentRight="true"
+        android:textColor="#3D33A8">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/defaultT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:text="Default Target Value is 101"
+        android:textSize="18sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/targetBtn"
+        android:layout_alignParentLeft="true"
+        android:textColor="#3D33A8">
+
+    </TextView>
+
+</RelativeLayout>
