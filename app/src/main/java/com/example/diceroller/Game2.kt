@@ -16,7 +16,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import java.util.*
-
+//
 class Game2 : AppCompatActivity(), SensorEventListener {
     lateinit var dice_1: ImageView
     lateinit var dice_2: ImageView
